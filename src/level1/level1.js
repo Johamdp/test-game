@@ -1,173 +1,153 @@
-
 // En los próximos problemas, deberás completar la función.
 // Todo tu código irá dentro de las llaves de la función.
 // Asegúrate que usas "return" cuando la consola te lo pida.
 // Pista: "console.log()" NO fucionará.
 // No cambies los nombres de las funciones.
 
-export function devolverString() {
-  // Tu código:
-
-  return;  
+export function devolverString(str) { 
+   // Tu código:    
+  return str.toString(); 
 }
 
-export function suma() {
+export function suma(x1, x2) {
+ // Tu código: 
+  return x1+x2;   
+}
+
+export function resta(x3, x4) {
  // Tu código:
-
-  return;  
+  return x3-x4;
 }
 
-export function resta() {
- // Tu código:
-
-  return;
-}
-
-export function multiplica() {
+export function multiplica(x3, x4) {
   // Tu código:
-
-  return;
+  return x3*x4;
 }
 
-export function divide() { 
+export function divide(x3, x4) { 
   // Tu código:
-
-  return;
+  return x3/x4;
 }
 
-export function sonIguales() {  
+export function sonIguales(x3, x4) {  
   // Tu código:
-
-  return;  
+  return x3===x4;  
 }
 
-export function tienenMismaLongitud() {  
+export function tienenMismaLongitud(str1, str2) {  
   // Tu código:
-
-  return;
+  return str1.length === str2.length;
 }
 
-export function menosQueNoventa() {  
+export function menosQueNoventa(num) {  
   // Tu código:
-
-  return;
+  return num < 90;
 }
 
-export function mayorQueCincuenta() {  
+export function mayorQueCincuenta(num) {  
   // Tu código:
-
-  return;
+  return num > 50;
 }
 
-export function obtenerResto() {  
+export function obtenerResto(x1,x2) {  
   // Tu código:
-
-  return;
+  return x1 % x2;
 }
 
-export function esPar() {
+export function esPar(num) {
   // Tu código:
-
-  return;
+  return num % 2 === 0;
 }
 
-export function esImpar() {  
+export function esImpar(num) {  
   // Tu código:
-
-  return;
+  return num % 2 === 1;
 }
 
-export function elevarAlCuadrado() {  
+export function elevarAlCuadrado(num) {  
   // Tu código:
-
-  return;
+  return num^2;
 }
 
-export function elevarAlCubo() { 
+export function elevarAlCubo(num) { 
   // Tu código:
-
-  return;
+  return num^3;
 }
 
-export function elevar() {  
+export function elevar(num, exponent) {  
   // Tu código:
-
-  return;
+  return Math.pow(num, exponent);
 }
 
-export function redondearNumero() {  
+export function redondearNumero(num) {  
   // Tu código:
-
-  return;
+  return Math.round(num);
 }
 
-export function redondearHaciaArriba() { 
+export function redondearHaciaArriba(num) { 
   // Tu código:
-
-  return;
+  return Math.ceil(num);
 }
 
 export function numeroRandom() {  
   // Tu código:
-
-  return;
+  return Math.random();
 }
 
-export function esPositivo() {
+export function esPositivo(num) {
   // Tu código:
-  
-  return;
-}
+  if (Math.sign(num) === 1) {
+    return "Es positivo";
+  } if (Math.sign(num) === -1) {
+      return "Es negativo";
+  } else return false;
+} 
 
-export function agregarSimboloExclamacion() {  
+export function agregarSimboloExclamacion(str) {  
   // Tu código:
-
-  return;
+  return str.toString() + "!";
 }
 
-export function combinarNombres() {
+export function combinarNombres(firstName, lastName) {
   // Tu código:
-
-  return;
+  return firstName + ' ' +  lastName;
 }
 
-export function obtenerSaludo() {
+export function obtenerSaludo(name) {
   // Tu código:
-
-  return;
+  return 'Hola ' + name + '!';
 }
 
-export function obtenerAreaRectangulo() {  
+export function obtenerAreaRectangulo(alto, ancho) {  
   // Tu código:
-
-  return;
+  return alto*ancho;
 }
 
 
-export function retornarPerimetro(){
+export function retornarPerimetro(lado){
   // Tu código:
-
-  return;
+  return lado*4;
 }
 
 
-export function areaDelTriangulo(){
+export function areaDelTriangulo(base, altura){
   // Tu código:
-
-  return;
+  return (base * altura) / 2;
 }
 
 
-export function deEuroAdolar(){
+export function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares.
   // Tu código:
-
-  return;
+  return (euro * 1.2);
 }
 
 
-export function esVocal(){
+export function esVocal(letra){
   // Tu código:
-
-  return;
-}
+  const vocales = ['a' , 'e' , 'i' ,'o' ,'u'];
+  if (letra.length > 1 || vocales.indexOf(letra) === -1) {
+    return "Dato incorrecto";
+  } else {
+    return "Es vocal"};
+  }
